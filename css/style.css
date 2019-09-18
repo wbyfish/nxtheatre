@@ -8046,10 +8046,11 @@ h1, h2, h3, h4, h5,
   font-size: 24px; }
 
 .discount h2 {
-  font-size: 40px;
-  color: #ce9c6b;
-  font-weight: 500;
-  text-transform: uppercase; }
+    font-size: 2em;
+    color: #ce9c6b;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 .discount p {
   font-size: 16px; }
