@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="en">
 	  <head>
 	    <title>NX Theatre-魔浪超劇場</title>
@@ -26,24 +26,53 @@
 	    <link rel="stylesheet" href="css/flaticon.css">
 	    <link rel="stylesheet" href="css/icomoon.css">
 	    <link rel="stylesheet" href="css/style.css">
+		<script>
+		  //宣告預設表單內容為空 （你想要的話也可以加東西）
+    var initSubject='',initBody='';
+ 
+    //按下傳送按鈕後執行
+    function submitHandler(){
+        var to = "wbyfish812@gmail.com";//寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+        var name = nameText.value;//讀取ID為 nameTextuser 物件中的值
+        var email = emailText.value;
+        
+        var subject = subText.value;
+//把user填的資料都塞到 mail body 中
+        var body = ""+bodyText.value+'%0A%0A%0A';//%0A是換行 換了三行
+            body += "From："+nameText.value+'%0A';
+            body += "Email："+emailText.value+'%0A';
+
+//傳送的主要程式碼
+        mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
+        mailTo.click();
+    }
+//在body onload
+    function init(){
+        subText.value=initSubject;
+        toText.value=initTo;
+        bodyText.value=initBody;
+    }
+		  
+		  
+		  </script>  
 	  </head>
-	  <body>
+	  <body onload="init()">
 
 	  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		    <div class="container">
-		     <a href="index.html"><img src="images/nx_logo.png"  ></a>
+		      <a href="index.html"><img src="images/nx_logo.png"  ></a>
 		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 		        <span class="oi oi-menu"></span> Menu
 		      </button>
 
 		      <div class="collapse navbar-collapse" id="ftco-nav">
 		        <ul class="navbar-nav ml-auto">
-		          <li class="nav-item"><a href="index.html" class="nav-link">首頁</a></li>
-		          <li class="nav-item active"><a href="about.html" class="nav-link">關於魔浪</a></li>
-		          <li class="nav-item"><a href="works.html" class="nav-link">魔浪作品</a></li>
-		          <li class="nav-item"><a href="gallery.html" class="nav-link">照片集</a></li>
-		          <li class="nav-item"><a href="media.html" class="nav-link">媒體</a></li>
-		          <li class="nav-item"><a href="contact.html" class="nav-link">連絡我們</a></li>
+		           <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about_en.html" class="nav-link">About NX</a></li>
+	          <li class="nav-item"><a href="works_en.html" class="nav-link">NX Works</a></li>
+	          <li class="nav-item"><a href="gallery_en.html" class="nav-link">Gallery</a></li>
+	          <li class="nav-item"><a href="media_en.html" class="nav-link">Media</a></li>
+	          <li class="nav-item active"><a href="contact_en.html" class="nav-link">Contact</a></li>
 		        </ul>
 		      </div>
 		    </div>
@@ -52,54 +81,33 @@
 	    
 	    
 
-	    <section class="ftco-section">
-	    	<div class="container">
-	    		<div class="row d-flex">
-	    			<div class="col-md-6 d-flex ftco-animate">
-	    				<div class="img img-about align-self-stretch" style="background-image: url(images/bg_3.jpg); width: 100%;"></div>
-	    			</div>
-	    			<div class="col-md-6 pl-md-5 ftco-animate">
-	    				<h2 class="mb-4">魔浪超劇場NXTheatre</h2>
-	    				<p>「魔浪超劇場」係由金曲獎作曲家及美國魔術奧斯卡獎得主劉季陵NX於2009年創立，跨領域導演鴻鴻擔任創意顧問，集合各方人才，打造一個結合幻術、音樂、戲劇、舞蹈、影像、特技等多項表演元素為宗旨的「超劇場」。
-
-							團名NXTheatre採用「Next」的概念，力圖拓展下一波的創意潮流。作品兼具精緻的藝術詩意與驚人的幻術設計，開創一個雅俗共賞的新型態表演。</p>
-
-						<p>[魔浪] 的定位是精緻的魔幻劇場。</p>
-
-						<p>[魔浪]也是世界唯一的跨界魔術劇場。</p>
-						<p>2010年推出創團作《走向春天的下午》音樂魔幻劇場，採用幾米新作的畫意境界與人物原型，大量使用不可思議的幻術元素，以及原創的迷人音樂，以國內外表演藝術前所未見的視野，造成民眾爭睹的誘因。演出票房亮眼反映熱烈，完成105場售票連演的創舉，為台灣文化創意產業立下新的里程碑。藝術娛樂界名人爭相推薦，媒體露出超過兩百則，各大媒體均以頭條報導。 </p>
-						
-						<p>
-                        [魔浪]重視跨界及跨領域的原創精神，這些體現在以精緻的魔幻劇場為核心，卻不斷與不同的藝術領域激盪、碰撞，甚至整個融入該制式的表演場域。以地理位置及表演場域的雙軸為基礎思考，不斷搜尋各種原創及突破的可能，以重新定位一切……
-                        
-                        </p>
-
-	    				
-	    			</div>
-	    		</div>
-	    	</div>
-	    </section>
-
-	    <section class="ftco-section ftco-discount img" style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row justify-content-center" data-scrollax-parent="true">
-						<div class="col-md-7 text-center discount ftco-animate" data-scrollax=" properties: { translateY: '-30%'}">
-							
-							<h2 class="mb-4">我賣給買家的，不是魔術。<br>而是「我」。<br>我賣的是我本身的形象。<br> 
-你就是魔術。 
-							<h3>Albert Goshman(1920-1991)</h3>
-</h2>
-							
-							
+	    <section class="ftco-section contact-section">
+        <div class="container mt-5">
+          <div class="row block-9">
+						<div class="col-md-4 contact-info ftco-animate">
+							<div class="row">
+								<div class="col-md-12 mb-4">
+		              <h2 class="h4">連絡資訊</h2>
+		            </div>
+		            <div class="col-md-12 mb-3">
+		              <p><span>地址:</span> </p>
+		            </div>
+		            <div class="col-md-12 mb-3">
+		              <p><span>電話:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+		            </div>
+		            <div class="col-md-12 mb-3">
+		              <p><span>Email:</span> <a href="mailto:nxillusion@hotmail.com">nxillusion@hotmail.com</a></p>
+		            </div>
+		            
+							</div>
 						</div>
-					</div>
-				</div>
-			</section>
+						<div class="col-md-1"></div>
+            
+          </div>
+        </div>
+      </section>
 
-	    
-
-			
+      
 
 	    <footer class="ftco-footer ftco-section img">
 	    	<div class="overlay"></div>
@@ -128,7 +136,7 @@
 		              <ul>
 		                
 		                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-		                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+		                <li><a href="mailto:nxillusion@hotmail.com"><span class="icon icon-envelope"></span><span class="text">nxillusion@hotmail.com</span></a></li>
 		              </ul>
 		            </div>
 	            </div>
