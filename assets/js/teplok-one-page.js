@@ -10,10 +10,11 @@ $(function(){
 $(function() {
 	$.vegas('slideshow', {
 	  backgrounds:[
-		{ src:'images/image001.jpg', fade:1000, delay: 100 },
+       	{ src:'images/image001.jpg', fade:1000, delay: 100 },
 		{ src:'images/image002.jpg', fade:1000, delay: 100 },
 		{ src:'images/image003.jpg', fade:1000, delay: 100 },
-		{ src:'images/image004.jpg', fade:1000, delay: 100 }
+		{ src:'images/image004.jpg', fade:1000, delay: 100 },
+        { src:'images/image005.jpg', fade:1000, delay: 100 }
 	  ]
 	})('overlay', {
 	  
