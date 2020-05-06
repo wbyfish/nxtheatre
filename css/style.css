@@ -7884,12 +7884,12 @@ h1, h2, h3, h4, h5,
     z-index: 0; }
     .pricing-entry .text:after {
       position: absolute;
-      bottom: 35%;
+      bottom: 30%;
       left: 0;
       right: 0;
       content: '';
       width: 100%;
-      height: 1px;
+      height: 2px;
       border-bottom: 1px dashed #785028;
       z-index: -1; }
     .pricing-entry .text h3 {
@@ -7911,7 +7911,7 @@ h1, h2, h3, h4, h5,
       background: #1b1b1b;
       font-size: 16px; }
     .pricing-entry p{
-        margin-top:-10px;
+        margin-top:-12px;
         margin-left: 17px;
         color:#CE9C6B;
     
